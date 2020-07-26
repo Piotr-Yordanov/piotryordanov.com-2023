@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.less';
+import './App.css';
 import { Hero, Header, Anchor } from './components/layout.jsx'
 import { Trader, Coder, Entrepreneur, Meditator, Writer, Musician } from "./components/blocks.jsx"
 import { HeartFilled } from "@ant-design/icons";

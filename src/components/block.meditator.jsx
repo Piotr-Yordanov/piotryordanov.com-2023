@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Divider, Typography} from "antd";
+import Player from "./block.musician.musicplayer"
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -18,7 +19,7 @@ export default () => (
             These 3 months have had a tremendous impact both on my practice and apreciation of buddhism, but also on my life.
         </Paragraph>
       </Typography>
-      <img src="monk-meditation.jpg"  height="512"/>
+      <img src="monk-meditation.jpg"  width="40%"/>
       <Divider style={{ margin: "100px 0",borderColor: "#d2d2d2" }} />
     </Row>
   </>

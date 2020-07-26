@@ -23,7 +23,7 @@ export default () => (
             <br/>
         </Paragraph>
       </Typography>
-      <img src="writing.png"  height="512"/>
+      <img src="writing.png"  width="80%"/>
       <Divider style={{ margin: "100px 0",borderColor: "#d2d2d2" }} />
     </Row>
   </>
