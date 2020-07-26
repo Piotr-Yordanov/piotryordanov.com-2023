@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { RadiusSettingOutlined, CodeOutlined } from '@ant-design/icons';
+import { RadiusSettingOutlined, CodeOutlined, MailOutlined, HomeOutlined } from '@ant-design/icons';
+
 import { Anchor } from 'antd';
 import './App.css';
+import Hero from "./Hero.js"
 
 import { Layout, Menu, Skeleton } from 'antd';
 
@@ -16,24 +18,24 @@ const App = () => {
   }, []);
   return (
     <Layout>
-      <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-        <div className="logo" />
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
+      <Header theme="light">
+        <Menu theme="light" mode="horizontal">
+          <Menu.Item key="story" >My Story</Menu.Item>
+          <Menu.Item key="contact" icon={<MailOutlined />}>Contact</Menu.Item>
         </Menu>
       </Header>
+      <Hero />
       <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
         <Anchor targetOffset={targetOffset} offsetTop={targetOffset}>
-          <Link href="#music" title={<RadiusSettingOutlined />}/>
-          <Link href="#code" title={<CodeOutlined/>}/>
+          <Link href="#hero" title={<HomeOutlined />}/>
+          <Link href="#waterfall-chart" title={<RadiusSettingOutlined />}/>
+          <Link href="#build" title={<CodeOutlined/>}/>
         </Anchor>
         <div className="site-layout-background" style={{ padding: 24, minHeight: 400 }}>
           <Skeleton active />
         </div>
-        <div id="music" style={{ padding: 24, minHeight: 1380, backgroundColor: "red" }} />
-        <div id="code" style={{ padding: 24, minHeight: 1380, backgroundCOlor: "black" }} />
+        <div id="waterfall-chart" style={{ padding: 24, minHeight: 1380, backgroundColor: "red" }} />
+        <div id="build" style={{ padding: 24, minHeight: 1380, backgroundCOlor: "black" }} />
       </Content>
       <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
     </Layout>

@@ -1,12 +1,19 @@
 @import '~antd/dist/antd.css';
+@import '~normalize.css/normalize.css';
+@import '~@blueprintjs/icons/lib/css/blueprint-icons.css';
+@import '~@blueprintjs/core/lib/css/blueprint.css';
 
-#components-layout-demo-fixed .logo {
-  width: 120px;
-  height: 31px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px 24px 16px 0;
-  float: left;
+
+html{
+  scroll-behavior: smooth;
 }
-.site-layout .site-layout-background {
-  background: #fff;
+.ant-layout-header{
+  background: transparent;
+  z-index: 999;
+}
+
+.ant-layout-header .ant-menu{
+  float: center;
+  text-align: right;
+  background: transparent;
 }
