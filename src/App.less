@@ -1,0 +1,38 @@
+@import '~antd/dist/antd.less';
+@import '~normalize.css/normalize.css';
+@import '~@blueprintjs/icons/lib/css/blueprint-icons.css';
+@import '~@blueprintjs/core/lib/css/blueprint.css';
+
+
+html{
+  scroll-behavior: smooth;
+}
+.ant-layout-header{
+  background: transparent;
+  z-index: 999;
+  box-shadow: 0px 1px 10px #999;
+}
+
+.ant-layout-header .ant-menu{
+  text-align: right;
+  border: none;
+  background: transparent;
+}
+
+/* For demo */
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+
+@theme: default;
+@font-size-base: 22px; // major text font size

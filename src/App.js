@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { RadiusSettingOutlined, CodeOutlined, MailOutlined, HomeOutlined } from '@ant-design/icons';
+import './App.less';
+import { Hero, Header, Anchor } from './components/layout.jsx'
+import { Trader, Coder, Entrepreneur, Meditator, Writer, Musician } from "./components/blocks.jsx"
 
-import { Anchor } from 'antd';
-import './App.css';
-import Hero from "./Hero.js"
-
-import { Layout, Menu, Skeleton } from 'antd';
-
-const { Header, Content, Footer } = Layout;
-const { Link } = Anchor;
+import { Layout, Row, Col } from 'antd';
+const { Content, Footer } = Layout;
 
 
 const App = () => {
@@ -18,24 +14,22 @@ const App = () => {
   }, []);
   return (
     <Layout>
-      <Header theme="light">
-        <Menu theme="light" mode="horizontal">
-          <Menu.Item key="story" >My Story</Menu.Item>
-          <Menu.Item key="contact" icon={<MailOutlined />}>Contact</Menu.Item>
-        </Menu>
-      </Header>
+      <Header />
       <Hero />
       <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
-        <Anchor targetOffset={targetOffset} offsetTop={targetOffset}>
-          <Link href="#hero" title={<HomeOutlined />}/>
-          <Link href="#waterfall-chart" title={<RadiusSettingOutlined />}/>
-          <Link href="#build" title={<CodeOutlined/>}/>
-        </Anchor>
-        <div className="site-layout-background" style={{ padding: 24, minHeight: 400 }}>
-          <Skeleton active />
-        </div>
-        <div id="waterfall-chart" style={{ padding: 24, minHeight: 1380, backgroundColor: "red" }} />
-        <div id="build" style={{ padding: 24, minHeight: 1380, backgroundCOlor: "black" }} />
+        <Row>
+          <Col span="2">
+            <Anchor targetOffset={targetOffset} />
+          </Col>
+          <Col span="22">
+            <Trader />
+            <Coder />
+            <Entrepreneur />
+            <Meditator />
+            <Writer />
+            <Musician />
+          </Col>
+        </Row>
       </Content>
       <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
     </Layout>
