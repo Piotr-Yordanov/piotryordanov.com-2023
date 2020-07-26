@@ -12,6 +12,7 @@
     "antd": "^4.4.3",
     "craco-less": "^1.17.0",
     "react": "^16.13.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.13.1",
     "react-lazy-hero": "^2.0.0",
     "react-scripts": "3.4.1",

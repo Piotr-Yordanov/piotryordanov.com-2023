@@ -3,6 +3,9 @@ import LazyHero from "react-lazy-hero";
 import { Typography, Space, Row, Divider } from "antd";
 import { RadarChartOutlined } from "@ant-design/icons";
 import styled from "styled-components";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
+
 
 import { Button } from "@blueprintjs/core";
 
@@ -11,12 +14,16 @@ const ProfilePic = styled.img`
   width: 160px;
   height: 160px;
   object-fit: cover;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #ffffff;
+  box-shadow: 0 0 8px 3px #b8b8b8;
 `;
 
 const BTN = (props) => (
-  <a href={"#" + props.text} style={{ textDecoration: "none" }}>
-    <Button icon={props.icon} large={true} text={props.text} />
-  </a>
+  <AnchorLink href={"#" + props.text}>
+    <Button icon={props.icon} large={true} text={props.text}></Button>
+  </AnchorLink>
 );
 
 const { Title } = Typography;
@@ -39,8 +46,8 @@ export default () => (
       <Row align="center">
         <Space align="center">
           <BTN icon="waterfall-chart" text="Trader" />
-          <BTN icon="code" text="Coder" />
           <BTN icon="build" text="Entrepreneur" />
+          <BTN icon="code" text="Coder" />
         </Space>
       </Row>
       <br />

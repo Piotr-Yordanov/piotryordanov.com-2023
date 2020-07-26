@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.less';
 import { Hero, Header, Anchor } from './components/layout.jsx'
 import { Trader, Coder, Entrepreneur, Meditator, Writer, Musician } from "./components/blocks.jsx"
+import { HeartFilled } from "@ant-design/icons";
 
 import { Layout, Row, Col } from 'antd';
 const { Content, Footer } = Layout;
@@ -23,15 +24,15 @@ const App = () => {
           </Col>
           <Col span="22">
             <Trader />
-            <Coder />
             <Entrepreneur />
+            <Coder />
             <Meditator />
             <Writer />
             <Musician />
           </Col>
         </Row>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+      <Footer style={{ textAlign: 'center' }}>Piotr Yordanov ©2020, created with <HeartFilled style={{color: "Red"}}/></Footer>
     </Layout>
   );
 };
