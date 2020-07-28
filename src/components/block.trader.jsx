@@ -7,7 +7,7 @@ export default () => (
   <>
     <Row id="Trader" align="center">
       <Typography>
-        <Title>Trader</Title>
+        <Title>Trading</Title>
         <Paragraph style={{ maxWidth: "1024px" }}>
           Since 2017, I have expressed a great interest in trading the fincial
           markets. I am fascinated by the pattern recognition skills required to

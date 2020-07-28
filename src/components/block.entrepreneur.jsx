@@ -7,7 +7,10 @@ export default () => (
   <>
     <Row id="Entrepreneur" align="center">
       <Typography>
-        <Title>Entrepreneur</Title>
+        <Title>Startups</Title>
+        <Paragraph style={{ maxWidth: "1024px" }}>
+          I am currently the co-founder of <a href="https://sila.today" target="_blank">Sila</a>, an agency specialized in created websites and e-commerce stores.
+        </Paragraph>
         <Paragraph style={{ maxWidth: "1024px" }}>
             My entrepreneurial journey goes back a long way, with my first startup co-founded in early 2013. The journey was not always easy, but it sure was quite rewarding.
             I have worked on a total of 7 different startups, all of which did not succeed.

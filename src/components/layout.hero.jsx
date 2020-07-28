@@ -11,8 +11,8 @@ import { Button } from "@blueprintjs/core";
 
 const ProfilePic = styled.img`
   border-radius: 100px;
-  width: 160px;
-  height: 160px;
+  width: 200px;;
+  height: 200px;
   object-fit: cover;
   border-width: 4px;
   border-style: solid;
@@ -22,7 +22,7 @@ const ProfilePic = styled.img`
 
 const BTN = (props) => (
   <AnchorLink href={"#" + props.text}>
-    <Button icon={props.icon} large={true} text={props.text}></Button>
+    <Button style={{fontSize: "22px"}} icon={props.icon} large={true} text={props.text}></Button>
   </AnchorLink>
 );
 
@@ -30,18 +30,22 @@ const { Title } = Typography;
 export default () => (
   <div id="hero">
     <LazyHero
-      style={{ marginTop: "-60px" }}
+      style={{top: "-70px"}}
       isFixed={true}
-      parallaxOffset={100}
-      opacity={0.9}
+      color="#1f1f1f"
+      parallaxOffset={300}
+      opacity={0.7}
       minHeight="100vh"
       imageSrc="flatiron.jpg"
     >
       <ProfilePic src="avatar.jpg" />
-      <Title marginBottom="40px">Piotr Yordanov</Title>
+      <br />
+      <br />
+      <Title style={{textShadow: "1px 1px black", color: "white"}} marginBottom="40px">Piotr Yordanov</Title>
       <Divider orientation="center" style={{ color: "#999999" }}>
-        <RadarChartOutlined />
+        <RadarChartOutlined style={{fontSize:"32px", textShadow: "1px 1px black", color: "white"}}/>
       </Divider>
+      <br />
 
       <Row align="center">
         <Space align="center">
@@ -50,7 +54,6 @@ export default () => (
           <BTN icon="code" text="Coder" />
         </Space>
       </Row>
-      <br />
       <br />
       <Row align="center">
         <Space>

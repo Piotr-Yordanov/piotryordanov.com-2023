@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon} from "@blueprintjs/core";
+import { Icon } from "@blueprintjs/core";
 
 
 import { Anchor } from 'antd';

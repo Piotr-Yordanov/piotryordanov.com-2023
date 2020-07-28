@@ -5,6 +5,7 @@ import { Hero, Header, Anchor } from './components/layout.jsx'
 import { Trader, Coder, Entrepreneur, Meditator, Writer, Musician } from "./components/blocks.jsx"
 import { HeartFilled } from "@ant-design/icons";
 
+
 import { Layout, Row, Col } from 'antd';
 const { Content, Footer } = Layout;
 
@@ -20,10 +21,10 @@ const App = () => {
       <Hero />
       <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
         <Row>
-          <Col span="2">
+          <Col span="4" align="center">
             <Anchor targetOffset={targetOffset} />
           </Col>
-          <Col span="22">
+          <Col span="16">
             <Trader />
             <Entrepreneur />
             <Coder />
