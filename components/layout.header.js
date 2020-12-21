@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <div>
             <Head />
-            <div className="border-t-8 border-green-500">
+            <div className="border-t-14 border-green-500">
                 <nav className="container mx-auto flex flex-wrap justify-between items-center py-8">
                     <div>
                         <a href="/" className="text-2xl uppercase font-bold " data-bcup-haslogintext="no">
@@ -22,8 +22,8 @@ const Header = () => {
                         <li>
                             <Toggle />
                         </li>
-                        <li><a href="/projects" className="hover:text-gray-600" >Projects</a></li>
-                        <li><a href="/hobbies" data-cypress="contact" className="text-copy-primary hover:text-gray-600" data-bcup-haslogintext="no">Hobbies</a></li>
+                        <li><a href="/#specialities" className="hover:text-gray-600" >Specialities</a></li>
+                        <li><a href="/#hobbies" data-cypress="contact" className="text-copy-primary hover:text-gray-600" data-bcup-haslogintext="no">Hobbies</a></li>
                     </ul>
                 </nav>
             </div>
