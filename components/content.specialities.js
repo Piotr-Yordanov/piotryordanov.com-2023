@@ -6,7 +6,7 @@ import Box from './content.specialities.box'
 const Specialities = () => {
     return <div id="specialities" className='relative py-10 leading-relaxed text-2xl font-bold'>
         <Dots direction="left" />
-        <div className='text-center font-bold text-6xl'>
+        <div className='text-center font-bold text-5xl xl:text-6xl'>
             My Specialities
             </div>
         <div className='flex flex-col'>

@@ -5,7 +5,7 @@ const data = [{
     title: "Chess",
     url: "/strategy.svg",
     media: <iframe
-        src="https://player.twitch.tv/?channel=tradingcarry&parent=localhost&muted=true"
+        src="https://player.twitch.tv/?video=842442503&parent=localhost&muted=true"
         height="400"
         width="100%"
         frameBorder="0"

@@ -46,7 +46,7 @@ const Box = (index, order) => {
     const dots = !order ? <Dots /> : null
 
     return <div className={`${bg}`} >
-        <div className={`relative container-inner mx-auto w-full my-8 p-2 py-20 flex ${row} flex-col-reverse`}>
+        <div className={`relative container-inner mx-auto w-full my-2 xl:my-8 p-2 xl:py-20 py:2 flex ${row} flex-col-reverse`}>
             {dots}
             <div className='xl:w-1/2 w-full'>
                 {media}
