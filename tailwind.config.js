@@ -23,6 +23,9 @@ module.exports = {
           default: '#4299E1',
           darker: '#3182CE',
         },
+        borderWidth: {
+          '14': '14px',
+        }
       },
     },
   },
