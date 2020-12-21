@@ -1,0 +1,37 @@
+.cal-heatmap-container {
+  margin: auto;
+}
+
+/* font size of month dates */
+.cal-heatmap-container .graph-label {
+  fill: rgb(136, 144, 181);
+  font-size: 1.1rem;
+}
+#day .cal-heatmap-container .graph-label {
+  font-size: 0.65rem;
+}
+
+/* border stroke of box when hovered */
+.cal-heatmap-container .graph-subdomain-group rect:hover {
+  stroke: gray;
+  stroke-width: 0px;
+  cursor: pointer;
+}
+
+/* Current Day */
+.cal-heatmap-container rect.highlight-now {
+  stroke: orange;
+}
+
+/* Text color of box */
+#day .cal-heatmap-container .subdomain-text {
+  font-size: 0px;
+}
+.cal-heatmap-container .subdomain-text {
+  fill: black;
+  font-size: 12px;
+  opacity: 0;
+}
+g:hover .subdomain-text {
+  opacity: 1;
+}
