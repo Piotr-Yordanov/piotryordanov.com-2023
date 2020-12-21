@@ -4,6 +4,8 @@ import { AppProps } from 'next/app'
 import NProgress from 'nprogress'
 
 import './styles/index.css';
+import './styles/seperator.css';
+import './styles/styles.css';
 
 Router.events.on('routeChangeStart', () => NProgress.start())
 Router.events.on('routeChangeComplete', () => NProgress.done())

@@ -1,28 +1,20 @@
 ::-webkit-scrollbar {
   background-color: transparent;
-  border-radius: 100px;
-  width: 5px;
-}
-::-webkit-scrollbar {
-  width: 6px;
+  border-radius: 10px;
+  width: 3px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-corner {
   background-color: transparent;
-}
-::-webkit-scrollbar-corner {
-  background: rgba(0, 0, 0, 0);
-}
-::-webkit-scrollbar-thumb {
-  border: 0px;
-  background: rgb(102, 104, 159) !important;
-  border-radius: 2px !important;
-}
-::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);
 }
 
-.card {
-  @apply rounded-lg border border-card bg-card;
+::-webkit-scrollbar-thumb {
+  border: 1px;
+  background: rgb(102, 104, 159) !important;
+  border-radius: 50px !important;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
 }
