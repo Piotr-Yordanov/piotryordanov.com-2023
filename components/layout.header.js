@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Toggle from './theme.toggle'
 import Head from './head'
 const Header = () => {
@@ -5,25 +6,35 @@ const Header = () => {
         <div>
             <Head />
             <div className="border-t-14 border-primary-default">
-                <nav className="container mx-auto flex flex-wrap justify-between items-center py-8">
+                <nav className="container flex flex-wrap items-center justify-between py-8 mx-auto">
                     <div>
-                        <a href="/" className="text-2xl uppercase font-bold " data-bcup-haslogintext="no">
-                            <div className="inline-block text-primary-default mr-2">
-                                Piotr
+                        <Link href="/">
+                            <a className="text-2xl font-bold uppercase " data-bcup-haslogintext="no">
+                                <div className="inline-block mr-2 text-primary-default">
+                                    Piotr
                             </div>
                             Yordanov
                         </a>
+                        </Link>
                     </div>
                     <div className="block lg:hidden">
-                        <button data-cypress="hamburger" className="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600" data-bcup-haslogintext="no">
+                        <button data-cypress="hamburger" className="flex items-center px-3 py-2 border border-gray-500 rounded hover:text-gray-600 hover:border-gray-600" data-bcup-haslogintext="no">
                         </button>
                     </div>
-                    <ul data-cypress="menu" className="uppercase tracking-wide font-bold w-full block flex-grow lg:space-x-8 space-y-6 lg:space-y-0 lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0 hidden">
+                    <ul data-cypress="menu" className="items-center flex-grow hidden block w-full mt-8 space-y-6 font-bold tracking-wide uppercase lg:space-x-8 lg:space-y-0 lg:flex lg:flex-initial lg:w-auto lg:mt-0">
                         <li>
                             <Toggle />
                         </li>
-                        <li><a href="/#specialities" className="hover:text-gray-600" >Specialities</a></li>
-                        <li><a href="/#hobbies" data-cypress="contact" className="text-copy-primary hover:text-gray-600" data-bcup-haslogintext="no">Hobbies</a></li>
+                        <li>
+                            <Link href="/#specialities">
+                                <a className="hover:text-gray-600" >Specialities</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/#hobbies">
+                                <a data-cypress="contact" className="text-copy-primary hover:text-gray-600" data-bcup-haslogintext="no">Hobbies</a>
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
