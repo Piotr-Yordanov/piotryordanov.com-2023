@@ -8,9 +8,9 @@ import { VscGithubAlt } from 'react-icons/vsc'
 
 const Footer = () => {
     return <div className="w-full dark:bg-gray-700 bg-primary-default">
-        <div className="mx-auto max-w-screen-md ">
+        <div className="max-w-screen-md mx-auto ">
             <div className="py-16 pb-8 text-center textl-xl">
-                <h2 className="text-2xl font-bold mb-8">Let's Get In Touch</h2>
+                <h2 className="mb-8 text-2xl font-bold">Let's Get In Touch</h2>
                 <div className='flex justify-center'>
                     <a className="mx-4" target="_blank" href="https://www.youtube.com/channel/UCd5BNKWR_5tnXCwzI2bKEtw">
                         <FiYoutube size={25} />
@@ -36,7 +36,7 @@ const Footer = () => {
                     Copyright 2020. All rights reserved.
                 </div>
             </div>
-            <div className="-mt-44 pb-4 overflow-x-hidden">
+            <div className="pb-4 overflow-x-hidden -mt-44">
                 <Grid />
             </div>
         </div >
