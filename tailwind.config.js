@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js'],
   darkMode: 'class',
@@ -19,7 +21,8 @@ module.exports = {
       colors: {
         primary: {
           lighter: '#4FD1C5',
-          default: '#2d3748',
+          default: colors.indigo[500],
+          // default: colors.green[500],
           darker: '#319795',
         },
         secondary: {

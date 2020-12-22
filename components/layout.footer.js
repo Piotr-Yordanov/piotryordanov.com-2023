@@ -7,7 +7,7 @@ import { FaTwitch } from 'react-icons/fa'
 import { VscGithubAlt } from 'react-icons/vsc'
 
 const Footer = () => {
-    return <div className="w-full dark:bg-gray-700 bg-green-300">
+    return <div className="w-full dark:bg-gray-700 bg-primary-default">
         <div className="mx-auto max-w-screen-md ">
             <div className="py-16 pb-8 text-center textl-xl">
                 <h2 className="text-2xl font-bold mb-8">Let's Get In Touch</h2>

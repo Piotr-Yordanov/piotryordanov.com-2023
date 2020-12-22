@@ -4,11 +4,11 @@ const Header = () => {
     return (
         <div>
             <Head />
-            <div className="border-t-14 border-green-500">
+            <div className="border-t-14 border-primary-default">
                 <nav className="container mx-auto flex flex-wrap justify-between items-center py-8">
                     <div>
                         <a href="/" className="text-2xl uppercase font-bold " data-bcup-haslogintext="no">
-                            <div className="inline-block text-green-600 mr-2">
+                            <div className="inline-block text-primary-default mr-2">
                                 Piotr
                             </div>
                             Yordanov

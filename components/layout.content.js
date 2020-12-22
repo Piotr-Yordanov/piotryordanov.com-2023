@@ -16,7 +16,7 @@ const Content = () => {
         <Specialities />
         <Divider />
         <Hobbies />
-        <svg fill="currentColor" viewBox="0 0 1695 57" className="dark:text-gray-700 text-green-300"><path d="M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1c183.6-.1 344.5 7.3 482.8 22v34H0V23z"></path></svg>
+        <svg fill="currentColor" viewBox="0 0 1695 57" className="dark:text-gray-700 text-primary-default"><path d="M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1c183.6-.1 344.5 7.3 482.8 22v34H0V23z"></path></svg>
     </div>
 }
 

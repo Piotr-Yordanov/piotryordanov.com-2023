@@ -12,8 +12,8 @@ const Specialities = () => {
                 Hobbies
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
-                {Box(0)}
-                {Box(1)}
+                <Box index={0} />
+                <Box index={1} />
             </div>
         </div>
     </div>

@@ -8,11 +8,14 @@ const Specialities = () => {
         <Dots direction="left" />
         <div className='text-center font-bold text-5xl xl:text-6xl'>
             My Specialities
+            <div className="flex mt-6 justify-center">
+                <div className="w-16 h-1 rounded-full bg-primary-default inline-flex"></div>
             </div>
+        </div>
         <div className='flex flex-col'>
-            {Box(0)}
-            {Box(1, true)}
-            {Box(2)}
+            <Box index={0} order={false} />
+            <Box index={1} order={true} />
+            <Box index={2} order={false} />
         </div>
     </div >
 }

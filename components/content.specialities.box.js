@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Link from 'next/link'
 import { RiStockLine } from 'react-icons/ri'
 import { BiCodeAlt } from 'react-icons/bi'
 import Dots from './content.dots-triangle'
@@ -40,7 +41,7 @@ const data = [{
         allowFullScreen></iframe>
 }]
 
-const Box = (index, order) => {
+const Box = ({ index, order }) => {
     const { title, pattern, icon, media, description } = data[index]
     const row = order ? 'xl:flex-row-reverse' : 'xl:flex-row'
     const bg = !order ? 'dark:bg-gray-900  bg-white' : 'dark:bg-gray-800 bg-gray-100'
@@ -62,6 +63,7 @@ const Box = (index, order) => {
                         <div className='text-xl font-normal'>
                             {description}
                         </div>
+                        <button class="bg-blue-100 text-blue-500 mt-4 block rounded p-2 text-sm "><span class="">Lire plus</span></button>
                     </div>
                 </div>
             </div >

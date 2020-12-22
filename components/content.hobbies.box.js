@@ -26,7 +26,7 @@ const data = [{
     </iframe>
 }]
 
-const Box = (index) => {
+const Box = ({ index }) => {
     const { title, url, media } = data[index]
     return <div className='flex flex-col'>
         <div className='flex justify-center mb-4'>
