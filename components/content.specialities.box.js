@@ -12,9 +12,9 @@ const data = [{
         width="100%"
         height="315"
         src="https://www.youtube.com/embed/kYugZ0hIczU"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+        allowFullScreen></iframe>
 }, {
     title: "Web Developper",
     icon: <BiCodeAlt />,
@@ -23,9 +23,9 @@ const data = [{
         width="100%"
         height="315"
         src="https://www.youtube.com/embed/7DNgThin5h8"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+        allowFullScreen></iframe>
 }, {
     title: "Meditator",
     icon: <img src="meditation.svg" width="30" height="30" />,
@@ -34,9 +34,9 @@ const data = [{
         width="100%"
         height="315"
         src="https://www.youtube.com/embed/7DNgThin5h8"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+        allowFullScreen></iframe>
 }]
 
 const Box = (index, order) => {
@@ -53,7 +53,7 @@ const Box = (index, order) => {
             </div>
             <div className='xl:w-1/2  w-full ml-4 xl:my-auto  mb-8'>
                 <div className='flex p-4'>
-                    <div class="inline-block rounded-full pr-8 ">
+                    <div className="inline-block rounded-full pr-8 ">
                         {icon}
                         <div className='ml-4 mb-4 text-3xl leading-snug'>
                             {title}

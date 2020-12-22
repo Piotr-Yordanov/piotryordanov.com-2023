@@ -7,10 +7,10 @@ import { FaTwitch } from 'react-icons/fa'
 import { VscGithubAlt } from 'react-icons/vsc'
 
 const Footer = () => {
-    return <div class="w-full dark:bg-gray-700 bg-green-300">
-        <div class="mx-auto max-w-screen-md ">
-            <div class="py-16 pb-8 text-center textl-xl">
-                <h2 class="text-2xl font-bold mb-8">Let's Get In Touch</h2>
+    return <div className="w-full dark:bg-gray-700 bg-green-300">
+        <div className="mx-auto max-w-screen-md ">
+            <div className="py-16 pb-8 text-center textl-xl">
+                <h2 className="text-2xl font-bold mb-8">Let's Get In Touch</h2>
                 <div className='flex justify-center'>
                     <a className="mx-4" target="_blank" href="https://www.youtube.com/channel/UCd5BNKWR_5tnXCwzI2bKEtw">
                         <FiYoutube size={25} />
@@ -36,7 +36,7 @@ const Footer = () => {
                     Copyright 2020. All rights reserved.
                 </div>
             </div>
-            <div class="-mt-44 pb-4 overflow-x-hidden">
+            <div className="-mt-44 pb-4 overflow-x-hidden">
                 <Grid />
             </div>
         </div >
