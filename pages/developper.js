@@ -1,11 +1,19 @@
 import { useState, useEffect } from 'react';
-import Content from '../components/developper.content'
 import Header from '../components/layout.header'
+import Intro from '../components/developper.intro'
+import Playlist from '../components/developper.playlist'
+
+import Divider from '../components/content.divider'
 
 const Dev = () => {
     return <div className="bg-primary">
         <Header />
-        <Content />
+
+        <Intro />
+        <Divider />
+
+        <Playlist />
+        <Divider />
     </div>
 }
 

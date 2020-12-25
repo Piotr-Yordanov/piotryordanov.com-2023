@@ -13,10 +13,6 @@ module.exports = {
       header: ['Nunito Sans', 'sans-serif'],
       body: ['Nunito Sans', 'sans-serif'],
     },
-    borderWidth: {
-      '14': '14px',
-      '12': '14px',
-    },
     extend: {
       colors: {
         primary: {
@@ -36,5 +32,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('tailwindcss-dark-mode')()],
+  plugins: [],
 }
