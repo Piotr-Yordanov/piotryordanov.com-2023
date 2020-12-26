@@ -3,7 +3,7 @@ import data from './developper.portfolio.data'
 import Title from './SectionTitle'
 
 const Card = ({ url, img, title, description, stack }) => {
-    return <a href={url} className='w-1/3' target="_blank">
+    return <a href={url} className='w-full lg:w-1/3' target="_blank">
         <div class="mx-4 bg-white dark:bg-gray-800 shadow-lg rounded-lg my-4">
             <img class="w-full h-48 object-cover object-center" src={img} alt="avatar" />
             <div class="py-4 px-6">
@@ -35,7 +35,7 @@ const Portfolio = () => {
             title="Portfolio"
             content="A list of the projects I worked on"
         />
-        <div className='flex flex-row flex-wrap'>
+        <div className='flex flex-col flex-nowrap lg:flex-row lg:flex-wrap'>
             {cards}
         </div>
     </div>
