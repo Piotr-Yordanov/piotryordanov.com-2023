@@ -46,17 +46,17 @@ const data = [{
 
 const Box = ({ index, order }) => {
     const { title, url, pattern, icon, media, description } = data[index]
-    const row = order ? 'xl:flex-row-reverse' : 'xl:flex-row'
+    const row = order ? 'lg:flex-row-reverse' : 'lg:flex-row'
     const bg = !order ? 'dark:bg-gray-900  bg-white' : 'dark:bg-gray-800 bg-gray-100'
     const dots = !order ? <Dots /> : null
 
     return <div className={`${bg}`} style={{ backgroundImage: pattern ? pattern : null }}>
-        <div className={`relative container-inner mx-auto w-full my-2 xl:my-8 p-2 xl:py-20 py:2 flex ${row} flex-col-reverse`}>
+        <div className={`relative container-inner mx-auto w-full my-2 lg:my-8 p-2 lg:py-20 py:2 flex ${row} flex-col-reverse`}>
             {dots}
-            <div className='w-full xl:w-1/2'>
+            <div className='w-full lg:w-1/2'>
                 {media}
             </div>
-            <div className='w-full mb-8 ml-4 xl:w-1/2 xl:my-auto'>
+            <div className='w-full mb-8 ml-4 lg:w-1/2 lg:my-auto'>
                 <div className='flex p-4'>
                     <div className="inline-block pr-8 rounded-full ">
                         {icon}
