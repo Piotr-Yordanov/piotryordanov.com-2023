@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { RiStockLine } from 'react-icons/ri'
 import { BiCodeAlt } from 'react-icons/bi'
 import Dots from './content.dots-triangle'
+import Button from './Button'
 
 
 const data = [{
@@ -67,7 +68,9 @@ const Box = ({ index, order }) => {
                             {description}
                         </div>
                         <Link href={url}>
-                            <button className="block p-2 mt-4 text-sm text-blue-500 bg-blue-100 rounded "><span className="">More</span></button>
+                            <div>
+                                <Button text="More" />
+                            </div>
                         </Link>
                     </div>
                 </div>
