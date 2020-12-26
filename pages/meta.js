@@ -15,9 +15,9 @@ const Meta = () => {
         <link rel="icon" type="image/png" href="/flatiron.svg" />
 
         {/* <!-- Google / Search Engine Tags --> */}
-        <meta itemprop="name" content={props.title} />
-        <meta itemprop="description" content={props.desc} />
-        <meta itemprop="image" content={`${props.canonical}/sm_image.jpg`} />
+        <meta itemProp="name" content={props.title} />
+        <meta itemProp="description" content={props.desc} />
+        <meta itemProp="image" content={`${props.canonical}/sm_image.jpg`} />
 
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content={`${props.canonical}`} />

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import data from './developper.portfolio.data'
+import Title from './section.title'
 
 const Card = ({ url, img, title, description, stack }) => {
     return <a href={url} className='w-1/3' target="_blank">
@@ -30,6 +31,10 @@ const Portfolio = () => {
     })
 
     return <div className='mx-auto container-inner'>
+        <Title
+            title="Portfolio"
+            content="A list of the projects I worked on"
+        />
         <div className='flex flex-row flex-wrap'>
             {cards}
         </div>
