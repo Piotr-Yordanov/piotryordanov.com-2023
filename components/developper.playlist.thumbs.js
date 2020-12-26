@@ -1,11 +1,10 @@
-import videos from './developper.playlist.data'
 import classnames from 'classnames'
 
-const Thumbs = ({ selectedIndex, setIndex }) => {
+const Thumbs = ({ data, selectedIndex, setIndex }) => {
     let thumbs = []
     const base = 'p-2 mb-2 bg-white border-2 border-solid rounded cursor-pointer dark:text-white dark:bg-gray-800'
     const baseBorder = 'dark:border-transparent border-gray-300'
-    videos.forEach(({ videoId, title }, index) => {
+    data.forEach(({ videoId, title }, index) => {
         const border = index === selectedIndex ? 'border-green-500' : baseBorder
         thumbs.push(
             <div
