@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import data from './developper.portfolio.data'
-import Title from './section.title'
+import Title from './SectionTitle'
 
 const Card = ({ url, img, title, description, stack }) => {
     return <a href={url} className='w-1/3' target="_blank">

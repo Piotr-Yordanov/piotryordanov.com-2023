@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import YouTube from 'react-youtube';
 import videos from './developper.playlist.data'
 import Thumbs from './developper.playlist.thumbs'
-import Title from './section.title'
+import Title from './SectionTitle'
 
 const Playlist = () => {
     const [selectedIndex, setIndex] = useState(0)
