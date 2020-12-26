@@ -33,7 +33,6 @@ const Portfolio = () => {
         <div className='flex flex-row flex-wrap'>
             {cards}
         </div>
-
     </div>
 }
 

@@ -7,8 +7,10 @@ const Title = () => (<div className='text-center'>
     <div className='mb-4 ml-4 text-3xl leading-snug'>
         How I made this website
     </div>
-    <div className='text-xl font-normal'>
-        I streamed how I built this website. Watch me create it from scratch.
+    <div className='text-lg font-normal'>
+        I find portfolios to lack the ability to communicate <b>HOW</b> I work, especially that my previous startups are now dead, and a lot of my client work
+        is proprietry code that I cannot demo.
+        Instead, I decided to <b>stream</b> how I built this very site. On the one hand, you see me in action. On the other, you could learn a trick or two!
     </div>
 </div>)
 

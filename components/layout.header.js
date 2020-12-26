@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import Toggle from './theme.toggle'
-import Head from './head'
+import GoogleFonts from "next-google-fonts";
+
 const Header = () => {
     return (
         <div>
-            <Head />
+            <GoogleFonts href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap" />
             <div className="border-t-14 border-primary-default">
                 <nav className="container flex flex-wrap items-center justify-between py-8 mx-auto">
                     <div>

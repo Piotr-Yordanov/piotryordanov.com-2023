@@ -32,7 +32,9 @@ const Content = () => {
             <div class="text-center mb-20">
                 <h1 class=" title-font  mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">Web Development</h1>
                 <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                    Computing is vast and languages are emerging almost anytime, I do my best to be up to the task to meet the needs of my clients and provide help to new developers.
+                    I am a Senior Front-End developper, with over <b>10 years</b> of experience building tons of web apps from scratch.
+                    <br />
+                    My journey started with backbone.js, then I migrated to Angular 1, and eventually I adpoted React.js in which I am quite proficient and at ease.
                 </p>
                 <div class="flex mt-6 justify-center">
                     <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
@@ -46,7 +48,7 @@ const Content = () => {
                         d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                     <CardContent
                         title="Web Design"
-                        content="Give taste 😍 color to applications, I do it to make your sites attractive 🎨. Before becoming a web designer, I was already familiar with color and drawing from a young age." />
+                        content="Give taste 😍 color to applications, I do it to make sites attractive 🎨. Designing websites was a natural requirement in most projects since they had a startup nature." />
                 </Card>
                 <Card>
                     <Icon
@@ -55,7 +57,7 @@ const Content = () => {
                         d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     <CardContent
                         title="Web Development"
-                        content="Placeholder text" />
+                        content="I always loved building apps from scratch, shipping them, then updating them with continuous feedback based on users feedback." />
                 </Card>
                 <Card>
                     <Icon
@@ -64,7 +66,7 @@ const Content = () => {
                         d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                     <CardContent
                         title="Tech Lead"
-                        content="Placeholder text" />
+                        content="My startup experience helped me naturally grow into leading teams of engineers, and bridging the gap between them, design, and business members." />
                 </Card>
             </div >
         </div >

@@ -1,4 +1,4 @@
-import { SiStyledComponents, SiReact, SiWordpress, SiTailwindcss } from 'react-icons/Si'
+import { SiStyledComponents, SiReact, SiWordpress, SiTailwindcss } from 'react-icons/si'
 const size = 20
 
 const sites = [{
