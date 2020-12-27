@@ -46,12 +46,12 @@ const Header = () => {
                 <nav className="container flex flex-wrap items-center justify-between py-8 mx-auto">
                     <div>
                         <Link href="/">
-                            <a className="text-2xl font-bold uppercase " data-bcup-haslogintext="no">
+                            <div className="text-2xl font-bold uppercase cursor-pointer ">
                                 <div className="inline-block mr-2 text-primary-default">
                                     Piotr
                                 </div>
-                            Yordanov
-                            </a>
+                                Yordanov
+                            </div>
                         </Link>
                     </div>
                     <div className="block lg:hidden">
