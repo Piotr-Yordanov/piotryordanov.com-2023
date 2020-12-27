@@ -5,6 +5,12 @@ module.exports = {
   darkMode: 'class',
   theme: {
     darkSelector: '.dark-mode',
+    filter: { // defaults to {}
+      'none': 'none',
+      'grayscale': 'grayscale(1)',
+      'invert': 'invert(1)',
+      'sepia': 'sepia(1)',
+    },
     container: {
       center: true,
       padding: '1rem',
@@ -30,7 +36,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      filter: ['hover']
+    },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-filters'),
+  ],
 }

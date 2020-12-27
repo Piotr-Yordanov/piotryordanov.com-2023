@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import videos from './developper.playlist.data'
-import { Playlist } from './Playlist';
+import Playlist from '../playlist/Playlist';
 import Title from './SectionTitle'
 
 const DevelopperPlaylist = () => {
+    const data = [{ media: videos }]
     return <div class="container-inner mx-auto px-5 py-12 " >
         <Title
             title="How I made this website"
@@ -11,7 +12,7 @@ const DevelopperPlaylist = () => {
                      is proprietry code that I cannot demo.
                      Instead, I decided to <b>stream</b> how I built this very site. On the one hand, you see me in action. On the other, you could learn a trick or two!"
         />
-        <Playlist data={videos} />
+        <Playlist data={data} />
 
     </div>
 }
