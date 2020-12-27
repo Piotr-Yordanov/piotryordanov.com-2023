@@ -4,8 +4,6 @@ import Title from './SectionTitle'
 import streams from './scalper.streaming.data'
 
 const Streaming = () => {
-    console.log(streams);
-
     return <div id="streaming" className='mx-auto container-inner'>
         <Title
             title="My live trading streams"

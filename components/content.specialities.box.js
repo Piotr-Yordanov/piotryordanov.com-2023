@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link'
 import { RiStockLine } from 'react-icons/ri'
 import { BiCodeAlt } from 'react-icons/bi'
+import Meditation from './MeditationSVG'
 import Dots from './content.dots-triangle'
 import Button from './Button'
 
@@ -34,7 +35,7 @@ const data = [{
 }, {
     title: "Meditator",
     url: "/meditator",
-    icon: <img src="meditation.svg" width="30" height="30" />,
+    icon: <Meditation />,
     description: "I have studied buddhist scripture in depth during my 5 years in Chiang Mai, Thailand. I also practiced various forms of meditation be is solo, or in retreats.",
     media: <iframe
         width="100%"
@@ -59,7 +60,7 @@ const Box = ({ index, order }) => {
             </div>
             <div className='w-full mb-8 ml-4 lg:w-1/2 lg:my-auto'>
                 <div className='flex p-4'>
-                    <div className="inline-block pr-8 rounded-full ">
+                    <div className="inline-block pr-8 rounded-full fill-current ">
                         {icon}
                         <div className='mb-4 ml-4 text-3xl leading-snug'>
                             {title}
