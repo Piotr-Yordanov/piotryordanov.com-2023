@@ -8,7 +8,7 @@ import platforms from './scalper.algo.data'
 const Algo = () => {
     platforms.forEach(({ name }, index) => {
         platforms[index].tabHeader = (selected) => {
-            return <div className={classnames('mr-4 hover:mr-8 hover:filter-none ', selected ? 'filter-none' : 'filter-grayscale')}>
+            return <div className={classnames('mr-2 hover:mr-8 hover:filter-none ', selected ? 'filter-none' : 'filter-grayscale')}>
                 <Image className="cursor-pointer rounded-2xl" width={36} height={36} src={`/platforms/${name}.png`} />
             </div>
         }
@@ -20,8 +20,6 @@ const Algo = () => {
         <div className='w-full '>
             <Playlist showTabs={true} data={platforms} />
         </div>
-        Algo
-
     </div>
 }
 

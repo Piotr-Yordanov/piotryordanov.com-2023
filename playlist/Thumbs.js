@@ -1,17 +1,26 @@
+import { useEffect } from 'react'
 import classnames from 'classnames'
 import Tabs from './Tabs'
 
 const Thumbs = (props) => {
     const { data, selectedList, selectedIndex, setIndex } = props
     let thumbs = []
+    const currentList = data[selectedList]
     const base = 'p-2 mb-2 bg-white border-2 border-solid rounded cursor-pointer dark:text-white dark:bg-gray-800'
     const baseBorder = 'dark:border-transparent border-gray-300'
     const hover = "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-    data[selectedList].media.forEach(({ img, src, videoId, title, author }, index) => {
+
+    useEffect(() => {
+        document.getElementById(`${currentList.name}`).scrollTop = 50 * selectedIndex;
+    })
+
+
+    currentList.media.forEach(({ img, src, videoId, title, author }, index) => {
         const border = index === selectedIndex ? 'border-green-500' : baseBorder
         const imgSRC = img !== undefined ? img : `http://i3.ytimg.com/vi/${videoId}/maxresdefault.jpg`
         thumbs.push(
             <div
+                id={`${data[selectedList].name}-${index}`}
                 key={index}
                 className={classnames(base, border, hover)}
                 onClick={() => setIndex(index)}>
@@ -31,9 +40,14 @@ const Thumbs = (props) => {
     })
 
 
+
     return <div className='flex flex-col'>
         <Tabs {...props} />
-        <div className='w-full'>
+        <div className='mb-2 text-center'>
+            {currentList.thumbTitle}
+
+        </div>
+        <div className='w-full p-2 overflow-y-scroll max-h-96' id={`${data[selectedList].name}`} style={{ scrollBehavior: 'smooth' }}>
             {thumbs}
         </div>
     </div>
