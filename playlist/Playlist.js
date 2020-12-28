@@ -55,10 +55,6 @@ const Playlist = (props) => {
 
 
 
-
-
-
-
     return <div className='flex flex-col-reverse lg:flex-row'>
         <div className='w-full mt-4 lg:w-1/4 lg:mt-0'>
             <Thumbs {...props} selectedIndex={selectedIndex} selectedList={selectedList} setList={setList} setIndex={setIndex} />
