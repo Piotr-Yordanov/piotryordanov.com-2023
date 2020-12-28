@@ -5,7 +5,7 @@ import Title from './SectionTitle'
 
 const DevelopperPlaylist = () => {
     const data = [{ media: videos }]
-    return <div class="container-inner mx-auto px-5 py-12 " >
+    return <div className="px-5 py-12 mx-auto container-inner " >
         <Title
             title="How I made this website"
             content="I find portfolios to lack the ability to communicate <b>HOW</b> I work, especially that my previous startups are now dead, and a lot of my client work

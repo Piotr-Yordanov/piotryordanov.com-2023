@@ -29,7 +29,7 @@ const Header = () => {
     let links = []
     data.forEach(({ icon, url, title }) => {
         links.push(
-            <li>
+            <li key={title}>
                 <Link href={url}>
                     <div className="cursor-pointer fill-current text-copy-primary hover:text-green-500">
                         {icon}
@@ -59,14 +59,14 @@ const Header = () => {
                         </button>
                     </div>
                     <ul data-cypress="menu" className="items-center flex-grow block w-full mt-8 space-y-6 font-bold tracking-wide uppercase lg:space-x-8 lg:space-y-0 lg:flex lg:flex-initial lg:w-auto lg:mt-0">
-                        <li>
+                        <li key={0}>
                             <Toggle />
                         </li>
                         {links}
                     </ul>
                 </nav>
             </div>
-        </div>
+        </div >
     )
 }
 

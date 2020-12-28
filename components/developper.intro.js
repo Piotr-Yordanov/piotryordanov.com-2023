@@ -5,15 +5,15 @@ import { SectionCardIcon } from './SectionCardIcon';
 import { SectionIntroTitle } from './SectionIntroTitle';
 
 const Content = () => {
-    return <section class="">
-        <div class="max-w-6xl mx-auto px-5 pb-12 pt-24">
+    return <section className="">
+        <div className="max-w-6xl px-5 pt-24 pb-12 mx-auto">
             <SectionIntroTitle
                 title="Web Development"
                 content="I am a Senior Front-End developper, with over <b>10 years</b> of experience building tons of web apps from scratch.
                     <br />
                     My journey started with backbone.js, then I migrated to Angular 1, and eventually I adpoted React.js in which I am quite proficient and at ease."
             />
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 ">
+            <div className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4 ">
                 <SectionCard>
                     <SectionCardIcon
                         bg="bg-green-100"

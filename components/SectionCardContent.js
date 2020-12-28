@@ -1,7 +1,7 @@
 export const SectionCardContent = ({ title, content, btn }) => {
-    return <div class="flex-grow">
-        <h2 class=" text-xl title-font font-medium mb-3">{title}</h2>
-        <p class="leading-relaxed text-sm text-justify">
+    return <div className="flex-grow">
+        <h2 className="mb-3 text-xl font-medium  title-font">{title}</h2>
+        <p className="text-sm leading-relaxed text-justify">
             {content}
         </p>
         {btn}
