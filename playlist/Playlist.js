@@ -3,9 +3,15 @@ import { useState } from 'react';
 import YouTube from 'react-youtube';
 import Thumbs from './Thumbs';
 
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+
 const Media = ({ entry }) => {
-    if (entry.type === "img") {
-        return <img height={420} width="100%" src={entry.src} />
+    if (entry.img !== undefined) {
+        return <Zoom>
+            <img height={420} width="100%" src={entry.img} />
+        </Zoom>
     } else {
         return <YouTube
             videoId={entry.videoId}

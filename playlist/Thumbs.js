@@ -7,9 +7,9 @@ const Thumbs = (props) => {
     const base = 'p-2 mb-2 bg-white border-2 border-solid rounded cursor-pointer dark:text-white dark:bg-gray-800'
     const baseBorder = 'dark:border-transparent border-gray-300'
     const hover = "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-    data[selectedList].media.forEach(({ type, src, videoId, title, author }, index) => {
+    data[selectedList].media.forEach(({ img, src, videoId, title, author }, index) => {
         const border = index === selectedIndex ? 'border-green-500' : baseBorder
-        const imgSRC = type === 'img' ? src : `http://i3.ytimg.com/vi/${videoId}/maxresdefault.jpg`
+        const imgSRC = img !== undefined ? img : `http://i3.ytimg.com/vi/${videoId}/maxresdefault.jpg`
         thumbs.push(
             <div
                 key={index}

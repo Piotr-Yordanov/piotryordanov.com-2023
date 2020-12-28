@@ -71,3 +71,7 @@ h6 {
   @apply z-50;
   @apply w-full h-1;
 }
+
+[data-rmiz-overlay] {
+  background-color: black !important;
+}
