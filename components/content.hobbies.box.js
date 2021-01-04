@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const data = [{
     title: "Chess",
     url: "/strategy.svg",
-    media: `https://player.twitch.tv/?video=842442503&muted=true`,
+    media: `https://player.twitch.tv/?collection=K2wg3hmQVRYVNw&muted=true`,
 }, {
     title: "Music Production",
     url: "/music.png",

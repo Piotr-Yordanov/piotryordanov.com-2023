@@ -9,7 +9,7 @@ import Button from './Button'
 
 const data = [{
     title: "CME Scalper",
-    url: "/scalping",
+    url: "/scalper",
     icon: <RiStockLine />,
     description: "I have discovered my passion for the financial markets in early 2017. The journey has proven to be one of the hardest and most humbling I have had to experience.",
     media: <iframe

@@ -19,11 +19,7 @@ const Dev = () => {
         <Algo />
         <Divider />
 
-        <Scalping />
-        <Divider />
-
         <Streaming />
-        <Divider />
 
         <Footer />
     </div>

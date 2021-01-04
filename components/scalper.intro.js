@@ -29,7 +29,7 @@ const Content = () => {
                     <SectionCardContent
                         title="Algo Trading"
                         btn={<a href="#algo"><Button /> </a>}
-                        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum" />
+                        content="With my decade of experience writing code, I built indicators and strategies for every platform I had experience trading with!" />
                 </SectionCard>
                 <SectionCard>
                     <SectionCardIcon
@@ -39,7 +39,7 @@ const Content = () => {
                     <SectionCardContent
                         title="Scalping"
                         btn={<a href="#scalping"><Button /> </a>}
-                        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum" />
+                        content="There is a certain beauty experienced when watching an 89 tick candle racing to close and print a new pattern on the chart. The speed at which such trading happens is aligned with my personality. When I scalp, I'm in flow!" />
                 </SectionCard>
                 <SectionCard>
                     <SectionCardIcon
@@ -49,7 +49,7 @@ const Content = () => {
                     <SectionCardContent
                         title="Streaming"
                         btn={<a href="#streaming"><Button /> </a>}
-                        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum" />
+                        content="I originally wanted to record my trading in order to learn from my mistakes. This eventually morphed into a desire to stream the trading for educational and fun purposes." />
                 </SectionCard>
             </div >
         </div >

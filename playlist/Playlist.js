@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import YouTube from 'react-youtube';
+import ReactPlayer from 'react-player'
 import Thumbs from './Thumbs';
 import { useEvent } from 'react-use';
 import { useCallback } from 'react'
@@ -15,17 +15,32 @@ const Media = ({ entry }) => {
             <img height={420} width="100%" src={entry.img} />
         </Zoom>
     } else {
-        return <YouTube
-            videoId={entry.videoId}
-            opts={{
-                height: '420',
-                width: '100%',
-                playerVars: {
-                    autoplay: 0,
-                },
-            }} />
-    }
+        let URL;
+        switch (entry.type) {
+            case 'youtube':
+                URL = `https://www.youtube.com/watch?v=${entry.videoId}`
+                break;
+            default:
+                URL = entry.url
+        }
+        console.log(URL);
 
+
+
+        return <ReactPlayer
+            url={URL}
+            controls={true}
+            config={{
+                youtube: {
+                    height: '420',
+                    width: '100%',
+                    playerVars: {
+                        autoplay: 0,
+                    },
+                },
+            }}
+        />
+    }
 }
 
 const Playlist = (props) => {

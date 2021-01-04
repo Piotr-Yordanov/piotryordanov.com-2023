@@ -5,35 +5,51 @@ import { RiStockLine } from 'react-icons/ri'
 import { BiCodeAlt } from 'react-icons/bi'
 import { FaChess } from 'react-icons/fa'
 import Meditation from './MeditationSVG'
+import { useState, useEffect } from 'react';
+import classnames from 'classnames'
 
 
 const data = [{
-    url: "/scalping",
+    url: "/scalper",
     icon: <RiStockLine />,
-    title: "Scalper"
+    title: "scalper"
 }, {
     url: "/developper",
     icon: <BiCodeAlt />,
-    title: "Developper"
+    title: "developper"
 }, {
-    url: "/meditation",
+    url: "/meditator",
     icon: <Meditation />,
     title: "meditator"
 }, {
     url: "/#hobbies",
     icon: <FaChess />,
-    title: "Hobbies"
+    title: "hobbies"
 }]
 
 const Header = () => {
+    const [activeLink, setActiveLink] = useState("")
+    useEffect(() => {
+        console.log(location.pathname.split("/")[1]);
+        setActiveLink(location.pathname.split("/")[1])
+    })
+
     let links = []
+
     data.forEach(({ icon, url, title }) => {
+        const active = title == activeLink ? "text-blue-500" : ""
+        console.log(title);
+        console.log(activeLink);
+
+
         links.push(
             <li key={title}>
                 <Link href={url}>
-                    <div className="cursor-pointer fill-current text-copy-primary hover:text-green-500">
-                        {icon}
-                        <div className="ml-4">{title}</div>
+                    <div className={active}>
+                        <div className="cursor-pointer fill-current text-copy-primary hover:text-green-500">
+                            {icon}
+                            <div className="ml-4">{title}</div>
+                        </div>
                     </div>
                 </Link>
             </li>

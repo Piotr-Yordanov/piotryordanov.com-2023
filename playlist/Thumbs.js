@@ -15,9 +15,18 @@ const Thumbs = (props) => {
     })
 
 
-    currentList.media.forEach(({ img, src, videoId, title, author }, index) => {
+    currentList.media.forEach(({ type, thumb, img, videoId, title, author }, index) => {
         const border = index === selectedIndex ? 'border-green-500' : baseBorder
-        const imgSRC = img !== undefined ? img : `http://i3.ytimg.com/vi/${videoId}/maxresdefault.jpg`
+        let URL;
+        switch (type) {
+            case 'youtube':
+                URL = `http://i3.ytimg.com/vi/${videoId}/maxresdefault.jpg`
+                break;
+            default:
+                URL = thumb
+        }
+
+        const imgSRC = img !== undefined ? img : URL
         thumbs.push(
             <div
                 id={`${data[selectedList].name}-${index}`}
