@@ -13,6 +13,11 @@ const videos = [{
     videoId: 'hptQvumn9tM',
     title: "Youtube Playlist",
     author: "Piotr Yordanov"
+}, {
+    type: 'youtube',
+    videoId: 'GOmGVE4FsUM',
+    title: "Scalping Page",
+    author: "Piotr Yordanov"
 }]
 
 export default videos

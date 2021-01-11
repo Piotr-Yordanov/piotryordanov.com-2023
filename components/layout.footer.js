@@ -35,7 +35,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className='mt-10 font-bold'>
-                        Copyright 2020. All rights reserved.
+                        Copyright 2021. All rights reserved.
                 </div>
                 </div>
                 <div className="pb-4 overflow-x-hidden -mt-44">

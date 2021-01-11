@@ -3,13 +3,13 @@ const data = [{
     thumbHeader: [],
     media: [{
         type: 'youtube',
-        videoId: 'kYugZ0hIczU',
-        title: "Live NQ Trading",
+        videoId: 'VDXpTey9YsE',
+        title: "Trade Review",
         author: "Piotr Yordanov"
     }, {
         type: 'youtube',
         videoId: 'kYugZ0hIczU',
-        title: "Live NQ Trading",
+        title: "Live Trading",
         author: "Piotr Yordanov"
     }]
 }]

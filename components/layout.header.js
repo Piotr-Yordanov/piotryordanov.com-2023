@@ -30,7 +30,6 @@ const data = [{
 const Header = () => {
     const [activeLink, setActiveLink] = useState("")
     useEffect(() => {
-        console.log(location.pathname.split("/")[1]);
         setActiveLink(location.pathname.split("/")[1])
     })
 
@@ -38,21 +37,18 @@ const Header = () => {
 
     data.forEach(({ icon, url, title }) => {
         const active = title == activeLink ? "text-blue-500" : ""
-        console.log(title);
-        console.log(activeLink);
-
 
         links.push(
-            <li key={title}>
+            <div className="mr-4" key={title}>
                 <Link href={url}>
                     <div className={active}>
-                        <div className="cursor-pointer fill-current text-copy-primary hover:text-green-500">
+                        <div className="text-sm cursor-pointer fill-current lg:text-sm text-copy-primary hover:text-green-500">
                             {icon}
                             <div className="ml-4">{title}</div>
                         </div>
                     </div>
                 </Link>
-            </li>
+            </div>
         )
     })
     return (
@@ -70,16 +66,12 @@ const Header = () => {
                             </div>
                         </Link>
                     </div>
-                    <div className="block lg:hidden">
-                        <button data-cypress="hamburger" className="flex items-center px-3 py-2 border border-gray-500 rounded hover:text-gray-600 hover:border-gray-600" data-bcup-haslogintext="no">
-                        </button>
-                    </div>
-                    <ul data-cypress="menu" className="items-center flex-grow block w-full mt-8 space-y-6 font-bold tracking-wide uppercase lg:space-x-8 lg:space-y-0 lg:flex lg:flex-initial lg:w-auto lg:mt-0">
-                        <li key={0}>
-                            <Toggle />
-                        </li>
+                    <div className="flex flex-row flex-wrap items-center w-full mt-4 font-bold uppercase lg:mt-0 lg:space-y-0 lg:flex lg:flex-initial lg:w-auto ">
                         {links}
-                    </ul>
+                        <div key={0}>
+                            <Toggle />
+                        </div>
+                    </div>
                 </nav>
             </div>
         </div >

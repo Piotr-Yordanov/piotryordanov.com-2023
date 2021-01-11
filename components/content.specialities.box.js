@@ -15,7 +15,7 @@ const data = [{
     media: <iframe
         width="100%"
         height="315"
-        src="https://www.youtube.com/embed/kYugZ0hIczU"
+        src="https://www.youtube.com/embed/VDXpTey9YsE"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen></iframe>
@@ -28,7 +28,7 @@ const data = [{
     media: <iframe
         width="100%"
         height="315"
-        src="https://www.youtube.com/embed/7DNgThin5h8"
+        src="https://www.youtube.com/embed/hptQvumn9tM"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen></iframe>
@@ -37,13 +37,7 @@ const data = [{
     url: "/meditator",
     icon: <Meditation />,
     description: "I have studied buddhist scripture in depth during my 5 years in Chiang Mai, Thailand. I also practiced various forms of meditation be is solo, or in retreats.",
-    media: <iframe
-        width="100%"
-        height="315"
-        src="https://www.youtube.com/embed/7DNgThin5h8"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen></iframe>
+    media: <img src="monk.jpg" />
 }]
 
 const Box = ({ index, order }) => {

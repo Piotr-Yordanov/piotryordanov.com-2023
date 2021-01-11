@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
 
-const Scalping = () => {
-    return <div id="scalping" className='mx-auto container-inner'>
-        Scalping hello
-
+const Scalper = () => {
+    return <div className=''>
+        Piotr Yordanov
     </div>
 }
 
-export default Scalping
+export default Scalper

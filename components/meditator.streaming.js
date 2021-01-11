@@ -11,7 +11,6 @@ const Streaming = () => {
             title="Meditation, Mindfulness, Buddhism, and Equanimity"
             content="The topic has always fascinated me. I hope I can pass along some of my knowledge. After all, buddhism is all about suffering, and the end of suffering!"
         />
-        <Playlist data={streams} />
     </div>
 }
 

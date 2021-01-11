@@ -30,12 +30,13 @@ const Media = ({ entry }) => {
         return <ReactPlayer
             url={URL}
             controls={true}
+            width={"100%"}
             config={{
                 youtube: {
                     height: '420',
-                    width: '100%',
+                    width: '420',
                     playerVars: {
-                        autoplay: 0,
+                        autoplay: 1,
                     },
                 },
             }}
