@@ -23,9 +23,6 @@ const Media = ({ entry }) => {
             default:
                 URL = entry.url
         }
-        console.log(URL);
-
-
 
         return <ReactPlayer
             url={URL}
@@ -36,7 +33,7 @@ const Media = ({ entry }) => {
                     height: '420',
                     width: '420',
                     playerVars: {
-                        autoplay: 1,
+                        autoplay: 0,
                     },
                 },
             }}

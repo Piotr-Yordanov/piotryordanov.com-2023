@@ -10,6 +10,7 @@ const props = {
 
 const Meta = () => {
     return <Head>
+
         <title>{props.title}</title>
         <meta name="description" content={props.desc} />
         <link rel="icon" type="image/png" href="/flatiron.svg" />
@@ -34,6 +35,19 @@ const Meta = () => {
         <meta name="twitter:site" content={props.twitter} />
         <meta name="twitter:image" content={`${props.canonical}/sm_image.jpg`} />
         <meta name="twitter:creator" content={props.twitter} />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSDQR05D2S"></script>
+        <script
+            dangerouslySetInnerHTML={{
+                __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { window.dataLayer.push(arguments) }
+            gtag('js', new Date());
+
+            gtag('config', 'G-NSDQR05D2S');
+        `,
+            }}
+        />
 
     </Head>
 }
