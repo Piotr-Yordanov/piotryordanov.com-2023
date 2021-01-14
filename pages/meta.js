@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 const props = {
     title: "Piotr Yordanov",
-    desc: "Web Developper, CME Scalper, Meditator, Chess player, Musician!",
+    desc: "Web Developer, CME Scalper, Meditator, Chess player, Musician!",
     canonical: "https://piotryordanov.com",
     twitter: "@Piotr_Yordanov"
 }
