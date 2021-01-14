@@ -36,7 +36,7 @@ const data = [{
     title: "Meditator",
     url: "/meditator",
     icon: <Meditation />,
-    description: "I have studied buddhist scripture in depth during my 5 years in Chiang Mai, Thailand. I also practiced various forms of meditation be is solo, or in retreats.",
+    description: "I have studied Buddhist scripture in-depth during my 5 years in Chiang Mai, Thailand. I also practiced various forms of meditation be it solo, or in retreats.",
     media: <img src="monk.jpg" />
 }]
 

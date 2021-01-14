@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const data = [{
     title: "Chess",
     url: "/strategy.svg",
-    media: `https://player.twitch.tv/?collection=K2wg3hmQVRYVNw&muted=true`,
+    media: `https://player.twitch.tv/?video=855362068&muted=true`,
 }, {
     title: "Music Production",
     url: "/music.png",
@@ -22,6 +22,8 @@ const Box = ({ index }) => {
         return null
 
     const src = `${media}&parent=${location.hostname}`
+    console.log(src);
+
     return <div className='flex flex-col'>
         <div className='flex justify-center mb-4'>
             <div className='p-2 mr-2'>

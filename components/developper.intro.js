@@ -9,9 +9,9 @@ const Content = () => {
         <div className="max-w-6xl px-5 pt-24 pb-12 mx-auto">
             <SectionIntroTitle
                 title="Web Development"
-                content="I am a Senior Front-End developper, with over <b>10 years</b> of experience building tons of web apps from scratch.
+                content="I am a Senior Front-End developer, with over <b>10 years</b> of experience building tons of web apps from scratch.
                     <br />
-                    My journey started with backbone.js, then I migrated to Angular 1, and eventually I adpoted React.js in which I am quite proficient and at ease."
+                    My journey started with backbone.js, then I migrated to Angular 1, and eventually I adopted React.js in which I am quite proficient and at ease."
             />
             <div className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4 ">
                 <SectionCard>

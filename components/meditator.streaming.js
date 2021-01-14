@@ -9,7 +9,7 @@ const Streaming = () => {
     return <div id="streaming" className='mx-auto container-inner'>
         <Title
             title="Meditation, Mindfulness, Buddhism, and Equanimity"
-            content="The topic has always fascinated me. I hope I can pass along some of my knowledge. After all, buddhism is all about suffering, and the end of suffering!"
+            content="The topic has always fascinated me. I hope I can pass along some of my knowledge. After all, Buddhism is all about suffering, and the end of suffering!"
         />
     </div>
 }

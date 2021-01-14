@@ -29,7 +29,7 @@ const Content = () => {
                         SVG={Mindfulness} />
                     <SectionCardContent
                         title="Mindfulness"
-                        content="Here. Now! Mindfulness is the ability of keeping the mind engaged with whatever rises in the present moment, without getting too attached or fascinated by it." />
+                        content="Here. Now! Mindfulness is the ability of keeping the mind engaged with whatever arises in the present moment, without getting too attached or fascinated by it." />
                 </SectionCard>
                 <SectionCard>
                     <SectionCardIcon
@@ -38,7 +38,7 @@ const Content = () => {
                         SVG={Equanimity} />
                     <SectionCardContent
                         title="Equanimity"
-                        content="The ability to keep calm and composure in the face of great adversity! Equanimity develops as a result of the practice, and offers a different quality of life." />
+                        content="The ability to keep calm and composure in the face of great adversity! Equanimity develops as a result of the practice and offers a different quality of life." />
                 </SectionCard>
                 <SectionCard>
                     <SectionCardIcon
