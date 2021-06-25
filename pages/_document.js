@@ -4,7 +4,6 @@ import { GA_TRACKING_ID } from "../lib/gtag"
 
 export default class MyDocument extends Document {
   render() {
-    console.log("inside document")
     return (
       <Html>
         <Head>
@@ -34,4 +33,3 @@ export default class MyDocument extends Document {
     )
   }
 }
-
