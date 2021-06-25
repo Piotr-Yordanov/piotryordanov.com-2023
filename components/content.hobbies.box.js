@@ -14,6 +14,7 @@ const data = [{
 const Box = ({ index }) => {
     const { title, url, media } = data[index]
     const [frontReady, setReady] = useState(false)
+
     useEffect(() => {
         setReady(true)
     })
@@ -22,8 +23,6 @@ const Box = ({ index }) => {
         return null
 
     const src = `${media}&parent=${location.hostname}`
-    console.log(src);
-
     return <div className='flex flex-col'>
         <div className='flex justify-center mb-4'>
             <div className='p-2 mr-2'>
