@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/theblindmonkshow",
-      "destination": "https://publish.obsidian.md/theblindmonkshow",
+      "source": "/secondbrain",
+      "destination": "https://publish.obsidian.md/piotryordanov",
       "permanent": true
     }
   ]
