@@ -17,17 +17,13 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/about',
-        destination: '/',
+        "source": "/secondbrain",
+        "destination": "https://publish.obsidian.md/serve?url=piotryordanov.com/secondbrain"
       },
-    ]
-  },
-  async rewrites() {
-    return [
       {
-        source: '/secondbrain',
-        destination: 'https://publish.obsidian.md/piotryordanov',
-      },
+        "source": "/secondbrain/:path*",
+        "destination": "https://publish.obsidian.md/serve?url=piotryordanov.com/secondbrain/:path*"
+      }
     ]
   },
 }
