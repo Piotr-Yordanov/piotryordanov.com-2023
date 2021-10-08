@@ -1,9 +1,16 @@
 {
-  "redirects": [
+  "rewrites": [
     {
-      "source": "/theblindmonkshow",
-      "destination": "https://publish.obsidian.md/theblindmonkshow",
-      "permanent": true
+      "source": "/about",
+      "destination": "/about-our-company.html"
+    },
+    {
+      "source": "/resize/:width/:height",
+      "destination": "/api/sharp"
+    },
+    {
+      "source": "/proxy/:match*",
+      "destination": "https://example.com/:match*"
     }
   ]
 }
