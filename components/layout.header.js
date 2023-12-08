@@ -1,12 +1,12 @@
-import Link from "next/link"
-import Toggle from "./theme.toggle"
-import { GoogleFonts } from "next-google-fonts"
-import { RiStockLine } from "react-icons/ri"
-import { BiCodeAlt } from "react-icons/bi"
-import { FaChess } from "react-icons/fa"
-import Meditation from "./MeditationSVG"
-import { useState, useEffect } from "react"
-import classnames from "classnames"
+import Link from "next/link";
+import Toggle from "./theme.toggle";
+import { GoogleFonts } from "next-google-fonts";
+import { RiStockLine } from "react-icons/ri";
+import { BiCodeAlt } from "react-icons/bi";
+import { FaChess } from "react-icons/fa";
+import Meditation from "./MeditationSVG";
+import { useState, useEffect } from "react";
+import classnames from "classnames";
 
 const data = [
   {
@@ -29,18 +29,18 @@ const data = [
     icon: <FaChess />,
     title: "hobbies",
   },
-]
+];
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState("")
+  const [activeLink, setActiveLink] = useState("");
   useEffect(() => {
-    setActiveLink(location.pathname.split("/")[1])
-  })
+    setActiveLink(location.pathname.split("/")[1]);
+  });
 
-  let links = []
+  let links = [];
 
   data.forEach(({ icon, url, title }) => {
-    const active = title == activeLink ? "text-blue-500" : ""
+    const active = title == activeLink ? "text-blue-500" : "";
 
     links.push(
       <div className="mr-4" key={title}>
@@ -53,8 +53,8 @@ const Header = () => {
           </div>
         </Link>
       </div>
-    )
-  })
+    );
+  });
   return (
     <div>
       <GoogleFonts href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap" />
@@ -63,9 +63,7 @@ const Header = () => {
           <div>
             <Link href="/">
               <div className="text-2xl font-bold uppercase cursor-pointer ">
-                <div className="inline-block mr-2 text-primary-default">
-                  Piotr
-                </div>
+                <div className="inline-block mr-2 text-primary-default">Piotr</div>
                 Yordanov
               </div>
             </Link>
@@ -79,8 +77,7 @@ const Header = () => {
         </nav>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
-
+export default Header;
