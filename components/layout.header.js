@@ -2,6 +2,7 @@ import Link from "next/link";
 import Toggle from "./theme.toggle";
 import { GoogleFonts } from "next-google-fonts";
 import { RiStockLine } from "react-icons/ri";
+import { GiTechnoHeart } from "react-icons/gi";
 import { BiCodeAlt } from "react-icons/bi";
 import { FaChess } from "react-icons/fa";
 import Meditation from "./MeditationSVG";
@@ -23,6 +24,11 @@ const data = [
     url: "/meditator",
     icon: <Meditation />,
     title: "meditator",
+  },
+  {
+    url: "/about",
+    icon: <GiTechnoHeart />,
+    title: "about",
   },
   {
     url: "/#hobbies",
