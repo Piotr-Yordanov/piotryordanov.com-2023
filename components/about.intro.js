@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { SectionCard } from "./SectionCard";
 import { SectionCardContent } from "./SectionCardContent";
 import { SectionCardIcon } from "./SectionCardIcon";
+import HobbiesBox from "./content.hobbies.box";
 
 import Button from "./Button";
 
@@ -71,9 +72,9 @@ const SectionIntroTitle = ({ title, content }) => {
       <h1 className="mb-4 text-center text-4xl font-extrabold leading-10 tracking-tight  title-font sm:text-5xl sm:leading-none md:text-6xl">
         {title}
       </h1>
-      <p className="mx-auto text-base leading-relaxed lg:w-3/4">
+      <div className="mx-auto text-base leading-relaxed lg:w-3/4">
         <div dangerouslySetInnerHTML={{ __html: content }} />
-      </p>
+      </div>
       <div className="flex justify-center mt-6">
         <div className="inline-flex w-16 h-1 bg-indigo-500 rounded-full"></div>
       </div>
@@ -87,17 +88,17 @@ const Content = () => {
       <div className="max-w-6xl px-5 pt-24 pb-12 mx-auto">
         <SectionIntroTitle
           title="Piotr Yordanov"
-          content="Born and Raised in Lebanon, of Russian origins, <i>Piotr Yordanov</i> started his entreprenrial journey right after finishing his engineering studies at the American University of Beirut.
-<br/>We filled in the role of CTO and full stack developper at multiple ventures, first in Lebanon, then in San Fransisco, and finally remotely.
-<br/>In 2013, he crowdfuned 8,000$ to fund his participation in Draper University, a 7 weeks entrepreneurship program in Silicon Valley, where he bought his first bitcoin.
-<br/>In 2015, he moved to South East Asia, and embraced the life of a digital nomad, working remotely for multiple startups.
-<br/>In 2017, with the crypto bull market in sight, he got into trading, first by doing crypto arbitrage, then by trading altcoins, and finally by trading bitcoin futures.
-<br/>This introduction to trading got him excited about the idea of automating trading strategies. So, he dived into studying technicaly analysis, and the financial market structures.
-<br/>In 2018, he made his first move into algorithmic trading, by building an advanced backtesting enginer.
-<br/>In 2020, he started working with various prop trading firms.
-<br/>In 2022, he moved to France and pursued an MBA in financial markets in Paris.
-<br/>In 2023, he moved to Dubai where he put all his years of experience to research, backtest, and build fully automated tradings strategies."
+          content="Piotr Yordanov is an experienced executive and hands-on technology leader who served as CTO of a financial group spanning 6 companies. He grew the technology team from 6 to 30 people across quant research and development, full-stack engineering, design, QA, DevOps, and product management. He built products from scratch, then built the teams, processes, and operating structure needed to scale them effectively.
+<br/><br/>At the executive level, he was responsible for stakeholder conversations, fundraising support, and strategic product and technology decisions. He combines hands-on technical depth with leadership across engineering, product, and business growth.
+<br/><br/>He also brings strong entrepreneurial judgment shaped by years of operating in unstable, high-risk environments. He adapts quickly to change and new information, works effectively through ambiguity, and has a strong instinct for spotting and pursuing new opportunities. His core areas of expertise are agentic AI engineering, quantitative trading systems, and web development, with TypeScript/React, Python, and Rust as his preferred technologies."
         />
+        <div className="pt-8">
+          <h2 className="mb-12 text-4xl font-bold text-center title-font">Hobbies</h2>
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+            <HobbiesBox index={0} />
+            <HobbiesBox index={1} />
+          </div>
+        </div>
       </div>
     </section>
   );

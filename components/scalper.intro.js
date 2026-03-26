@@ -1,10 +1,7 @@
-import { useState, useEffect } from 'react';
 import { SectionCard } from './SectionCard';
 import { SectionCardContent } from './SectionCardContent';
 import { SectionCardIcon } from './SectionCardIcon';
 import { SectionIntroTitle } from './SectionIntroTitle';
-
-import Button from './Button'
 
 const Scalping = () => (<svg className="h-8" enableBackground="new 0 0 511.951 511.951" viewBox="0 0 511.951 511.951" width="512" xmlns="http://www.w3.org/2000/svg"> <g><path d="m88.358 183.819h-21.678v-93.21c0-8.284-6.716-15-15-15s-15 6.716-15 15v93.21h-21.68c-8.284 0-15 6.716-15 15v112.478c0 8.284 6.716 15 15 15h21.68v21.682c0 8.284 6.716 15 15 15s15-6.716 15-15v-21.682h21.679c8.284 0 15-6.716 15-15v-112.478c-.001-8.284-6.716-15-15.001-15zm-15 112.478h-43.358v-82.478h43.358z" /><path d="m224.555 295.082h-21.679v-21.682c0-8.284-6.716-15-15-15s-15 6.716-15 15v21.682h-21.68c-8.284 0-15 6.716-15 15v73.356c0 8.284 6.716 15 15 15h21.68v22.904c0 8.284 6.716 15 15 15s15-6.716 15-15v-22.904h21.679c8.284 0 15-6.716 15-15v-73.356c0-8.284-6.716-15-15-15zm-15 73.357h-43.358v-43.356h43.358z" /><path d="m360.753 221.719h-21.679v-21.681c0-8.284-6.716-15-15-15s-15 6.716-15 15v21.681h-21.68c-8.284 0-15 6.716-15 15v73.356c0 8.284 6.716 15 15 15h21.679v96.268c0 8.284 6.716 15 15 15s15-6.716 15-15v-96.268h21.679c8.284 0 15-6.716 15-15v-73.356c.001-8.284-6.715-15-14.999-15zm-15 73.356h-43.358v-43.356h43.358z" /><path d="m496.951 112.29h-21.68v-21.682c0-8.284-6.716-15-15-15s-15 6.716-15 15v21.682h-21.679c-8.284 0-15 6.716-15 15v109.429c0 8.284 6.716 15 15 15h21.679v59.578c0 8.284 6.716 15 15 15s15-6.716 15-15v-59.578h21.68c8.284 0 15-6.716 15-15v-109.429c0-8.284-6.716-15-15-15zm-15 109.429h-43.358v-79.429h43.358z" /></g> </svg>)
 const Algo = () => (<svg className="h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" ><g id="monitor-display-bitcoin"><path d="M59,7H41.21A10.982,10.982,0,0,0,22.79,7H5a3.009,3.009,0,0,0-3,3V45a3.009,3.009,0,0,0,3,3H27v6H21a1,1,0,0,0-1,1v5H18v2H46V60H44V55a1,1,0,0,0-1-1H37V48H59a3.009,3.009,0,0,0,3-3V10A3.009,3.009,0,0,0,59,7ZM32,4a9,9,0,1,1-9,9A9.014,9.014,0,0,1,32,4ZM42,56v4H22V56ZM29,54V48h6v6Zm31-9a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V10A1,1,0,0,1,5,9H21.76A11,11,0,1,0,42.24,9H59a1,1,0,0,1,1,1Z" /><path d="M16,26H14V23H12v3H10a1,1,0,0,0-1,1V37a1,1,0,0,0,1,1h2v3h2V38h2a1,1,0,0,0,1-1V27A1,1,0,0,0,16,26ZM15,36H11V28h4Z" /><path d="M28,29H26V26H24v3H22a1,1,0,0,0-1,1V40a1,1,0,0,0,1,1h2v3h2V41h2a1,1,0,0,0,1-1V30A1,1,0,0,0,28,29ZM27,39H23V31h4Z" /><path d="M42,26H40V23H38v3H36a1,1,0,0,0-1,1V37a1,1,0,0,0,1,1h2v3h2V38h2a1,1,0,0,0,1-1V27A1,1,0,0,0,42,26ZM41,36H37V28h4Z" /><path d="M54,29H52V26H50v3H48a1,1,0,0,0-1,1V40a1,1,0,0,0,1,1h2v3h2V41h2a1,1,0,0,0,1-1V30A1,1,0,0,0,54,29ZM53,39H49V31h4Z" /><path d="M37,11a3.01,3.01,0,0,0-2-2.82V7H33V8H31V7H29V8H27v2h1v6H27v2h2v1h2V18h2v1h2V17.82A3.01,3.01,0,0,0,37,15a2.974,2.974,0,0,0-.78-2A2.974,2.974,0,0,0,37,11Zm-3,5H30V14h4a1,1,0,0,1,0,2Zm0-4H30V10h4a1,1,0,0,1,0,2Z" /></g></svg>)
@@ -14,11 +11,12 @@ const Content = () => {
     return <section className="">
         <div className="max-w-6xl px-5 pt-24 pb-12 mx-auto">
             <SectionIntroTitle
-                title="CME Scalper"
-                content="My trading journey started when I rode the BTC bull run in 2017, and then the downhill of worry in the 2018 crypto bear market.
-                    Every since, my passion for the financial markets grew by the day. I explored algo trading, read books on all sorts of techniques and strategies, and took courses online.
+                title="Finance"
+                content="Served as CTO in a hedge-fund environment, combining executive leadership with hands-on technical depth across trading infrastructure, research systems, and product execution.
                     <br />
-                    Eventually, I found my zone in scalping the futures markets on NinajTrader. It is more robust and fun than any other market I traded so far."
+                    Built products from scratch, scaled teams and operating processes, and supported strategic conversations spanning stakeholders, fundraising, technology, and growth.
+                    <br />
+                    Bring strong entrepreneurial judgment shaped by operating in high-risk, fast-changing environments where adaptability, execution speed, and clarity under ambiguity matter." 
             />
             <div className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4 ">
                 <SectionCard>
@@ -27,9 +25,8 @@ const Content = () => {
                         text="text-green-500"
                         SVG={Algo} />
                     <SectionCardContent
-                        title="Algo Trading"
-                        btn={<a href="#algo"><Button /> </a>}
-                        content="With my decade of experience writing code, I built indicators and strategies for every platform I had experience trading with!" />
+                        title="Trading Infrastructure"
+                        content="Built and supported quantitative trading systems, research tooling, and internal platforms that connected market ideas with reliable execution and operational visibility." />
                 </SectionCard>
                 <SectionCard>
                     <SectionCardIcon
@@ -37,9 +34,8 @@ const Content = () => {
                         text="text-blue-500"
                         SVG={Scalping} />
                     <SectionCardContent
-                        title="Scalping"
-                        btn={<a href="#scalping"><Button /> </a>}
-                        content="There is a certain beauty experienced when watching an 89 tick candle racing to close and print a new pattern on the chart. The speed at which such trading happens is aligned with my personality. When I scalp, I'm in flow!" />
+                        title="Executive Leadership"
+                        content="Led across engineering, product, and business priorities, helping align stakeholders, shape strategy, support fundraising conversations, and make high-leverage technology decisions." />
                 </SectionCard>
                 <SectionCard>
                     <SectionCardIcon
@@ -47,9 +43,8 @@ const Content = () => {
                         text="text-yellow-500"
                         SVG={Streaming} />
                     <SectionCardContent
-                        title="Streaming"
-                        btn={<a href="#streaming"><Button /> </a>}
-                        content="I originally wanted to record my trading in order to learn from my mistakes. This eventually morphed into a desire to stream the trading for educational and fun purposes." />
+                        title="High-Risk Execution"
+                        content="Operate effectively in unstable, ambiguous, and fast-moving environments, combining strong entrepreneurial instinct with the ability to adapt quickly and pursue new opportunities." />
                 </SectionCard>
             </div >
         </div >

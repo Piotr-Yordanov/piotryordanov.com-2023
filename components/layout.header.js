@@ -1,52 +1,46 @@
 import Link from "next/link";
-import Toggle from "./theme.toggle";
-import { GoogleFonts } from "next-google-fonts";
 import { RiStockLine } from "react-icons/ri";
 import { GiTechnoHeart } from "react-icons/gi";
 import { BiCodeAlt } from "react-icons/bi";
-import { FaChess } from "react-icons/fa";
-import Meditation from "./MeditationSVG";
 import { useState, useEffect } from "react";
-import classnames from "classnames";
 
 const data = [
   {
-    url: "/scalper",
-    icon: <RiStockLine />,
-    title: "scalper",
+    key: "ai",
+    url: "/AI",
+    icon: <GiTechnoHeart />,
+    title: "AI",
   },
   {
-    url: "/developper",
+    key: "cto",
+    url: "/CTO",
     icon: <BiCodeAlt />,
-    title: "developper",
+    title: "cto",
   },
   {
-    url: "/meditator",
-    icon: <Meditation />,
-    title: "meditator",
+    key: "finance",
+    url: "/finance",
+    icon: <RiStockLine />,
+    title: "finance",
   },
   {
+    key: "about",
     url: "/about",
     icon: <GiTechnoHeart />,
     title: "about",
-  },
-  {
-    url: "/#hobbies",
-    icon: <FaChess />,
-    title: "hobbies",
   },
 ];
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
   useEffect(() => {
-    setActiveLink(location.pathname.split("/")[1]);
+    setActiveLink(location.pathname.split("/")[1].toLowerCase());
   });
 
   let links = [];
 
-  data.forEach(({ icon, url, title }) => {
-    const active = title == activeLink ? "text-blue-500" : "";
+  data.forEach(({ key, icon, url, title }) => {
+    const active = key == activeLink ? "text-blue-500" : "";
 
     links.push(
       <div className="mr-4" key={title}>
@@ -63,7 +57,6 @@ const Header = () => {
   });
   return (
     <div>
-      <GoogleFonts href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap" />
       <div className="border-t-8 border-primary-default">
         <nav className="container flex flex-wrap items-center justify-between py-8 mx-auto">
           <div>
@@ -76,9 +69,6 @@ const Header = () => {
           </div>
           <div className="flex flex-row flex-wrap items-center w-full mt-4 font-bold uppercase lg:mt-0 lg:space-y-0 lg:flex lg:flex-initial lg:w-auto ">
             {links}
-            <div key={0}>
-              <Toggle />
-            </div>
           </div>
         </nav>
       </div>

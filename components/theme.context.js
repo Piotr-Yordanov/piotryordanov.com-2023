@@ -1,28 +1,24 @@
 import { useEffect, createContext, useState } from 'react'
 
-
-const getInitialTheme = _ => {
-    if (typeof window !== "undefined" && window.localStorage) {
-        const storedPrefs = window.localStorage.getItem("color-theme")
-        if (typeof storedPrefs === "string") {
-            return storedPrefs
-        }
-
-        const userMedia = window.matchMedia("(prefers-color-scheme: dark)")
-        if (userMedia.matches) {
-            return "dark"
-        }
-    }
-
-    // If you want to use light theme as the default, return "light" instead
-    return "dark"
-}
-
-// Exports
-
 export const ThemeContext = createContext()
-export const ThemeProvider = ({ initialTheme, children }) => {
-    const [theme, setTheme] = useState(getInitialTheme)
+export const ThemeProvider = ({ children }) => {
+    const [theme, setTheme] = useState("dark")
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const stored = localStorage.getItem("color-theme")
+            if (stored) {
+                setTheme(stored)
+            } else {
+                const userMedia = window.matchMedia("(prefers-color-scheme: dark)")
+                if (userMedia.matches) {
+                    setTheme("dark")
+                } else {
+                    setTheme("light")
+                }
+            }
+        }
+    }, [])
 
     const rawSetTheme = theme => {
         const root = window.document.documentElement
@@ -32,10 +28,6 @@ export const ThemeProvider = ({ initialTheme, children }) => {
         root.classList.add(theme)
 
         localStorage.setItem("color-theme", theme)
-    }
-
-    if (initialTheme) {
-        rawSetTheme(initialTheme)
     }
 
     useEffect(
