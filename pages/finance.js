@@ -10,7 +10,7 @@ const FinancePage = () => {
 
         <Intro />
         <Divider />
-        <ReadMore href="https://docs.piotryordanov.com/" />
+        <ReadMore href="https://docs.piotryordanov.com/docs" />
 
         <Footer />
     </div>

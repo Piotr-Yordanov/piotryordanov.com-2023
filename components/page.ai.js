@@ -10,7 +10,7 @@ const AIPage = () => {
       <Header />
       <AI />
       <Divider />
-      <ReadMore href="https://docs.piotryordanov.com/agentic-ai/overview" />
+      <ReadMore href="https://docs.piotryordanov.com/docs/agentic-ai/overview" />
       <Footer />
     </div>
   );

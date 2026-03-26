@@ -10,7 +10,7 @@ const CTOPage = () => {
       <Header />
       <Intro />
       <Divider />
-      <ReadMore href="https://docs.piotryordanov.com/cto-leadership/overview" />
+      <ReadMore href="https://docs.piotryordanov.com/docs/cto-leadership" />
       <Footer />
     </div>
   );
