@@ -13,19 +13,19 @@ const Footer = () => {
       </svg>
       <div className="w-full dark:bg-gray-700 bg-primary-default">
         <div className="max-w-screen-md mx-auto ">
-          <div className="py-16 pb-8 text-center textl-xl text-white">
+          <div className="py-16 pb-8 text-center textl-xl text-black">
             <h2 className="mb-8 text-2xl font-bold">Let's Get In Touch</h2>
             <div className="flex items-center justify-center gap-8 mx-auto">
-              <a className="flex justify-center text-white" target="_blank" rel="noreferrer" aria-label="YouTube" href="https://www.youtube.com/channel/UCd5BNKWR_5tnXCwzI2bKEtw">
+              <a className="flex justify-center text-black" target="_blank" rel="noreferrer" aria-label="YouTube" href="https://www.youtube.com/channel/UCd5BNKWR_5tnXCwzI2bKEtw">
                 <FiYoutube size={25} />
               </a>
-              <a className="flex justify-center text-white" target="_blank" rel="noreferrer" aria-label="GitHub" href="https://github.com/piotryordanov">
+              <a className="flex justify-center text-black" target="_blank" rel="noreferrer" aria-label="GitHub" href="https://github.com/piotryordanov">
                 <VscGithubAlt size={25} />
               </a>
-              <a className="flex justify-center text-white" target="_blank" rel="noreferrer" aria-label="X" href="https://x.com/piotryordanov">
+              <a className="flex justify-center text-black" target="_blank" rel="noreferrer" aria-label="X" href="https://x.com/piotryordanov">
                 <FiTwitter size={25} />
               </a>
-              <a className="flex justify-center text-white" target="_blank" rel="noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/piotr-yordanov">
+              <a className="flex justify-center text-black" target="_blank" rel="noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/piotr-yordanov">
                 <FiLinkedin size={25} />
               </a>
             </div>
